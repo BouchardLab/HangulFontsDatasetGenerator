@@ -1,0 +1,38 @@
+For your conveinience we have curated the font files used here along with links to their sources. There are a few other font files that either are too
+similar to the included fonts (SemiBold versus Bold).
+
+- NanumMyeongjo
+- NanumMyeongjoEB
+- NanumBarunGothicUltraLight
+- NanumGothic
+- NanumGothicBold
+- NanumGothicExtraBold
+- NanumBarunGothic
+- NanumGothicCoding-Regular
+- NanumGothicCoding-Bold
+- NanumPen
+- NanumBarunpenRegular
+- NanumPenScript-Regular
+- NanumBrush
+- GothicA1-ExtraLight
+- GothicA1-Light
+- GothicA1-Thin
+- GothicA1-Regular
+- GothicA1-Medium
+- GothicA1-Bold
+- GothicA1-SemiBold
+- GothicA1-ExtraBold
+- GothicA1-Black
+- SeoulHangangL
+- SeoulHangangM
+- SeoulHangangBL
+- SeoulHangangEB
+- SourceHanSerifK-Regular
+- IropkeBatangM
+- Stylish-Regular
+- GamjaFlower-Regular
+- SeoulHangangB
+- JoseonIlboMyeongjo
+- PoorStory-Regular
+- BlackAndWhitePicture-Regular
+- HiMelody-Regular
