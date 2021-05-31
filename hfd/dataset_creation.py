@@ -1,7 +1,7 @@
 import glob, h5py, os, subprocess
 
 import numpy as np
-from scipy.ndimage import imread
+from matplotlib.pyplot import imread
 
 from .utils import resize
 from .label_mapping import int2imf

@@ -25,8 +25,6 @@ RUN conda update -n base -c defaults conda
 RUN conda install python=3.7
 RUN conda install numpy scipy pandas scikit-image h5py
 
-ADD HangulFontsDatasetGenerator /home/HanGulFontsDatasetGenerator
-RUN pip install -e /home/HanGulFontsDatasetGenerator
 
 # Setup entrypoint
 ADD entrypoint.sh /home/entrypoint.sh
@@ -36,3 +34,6 @@ ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/
 RUN chmod +x /usr/bin/tini
 ENTRYPOINT [ "/usr/bin/tini", "--", "/home/entrypoint.sh" ]
 CMD [ "/bin/bash" ]
+
+ADD HangulFontsDatasetGenerator /home/HanGulFontsDatasetGenerator
+RUN pip install -e /home/HanGulFontsDatasetGenerator
