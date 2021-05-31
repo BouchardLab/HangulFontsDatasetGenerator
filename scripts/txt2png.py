@@ -1,6 +1,6 @@
 import argparse
 
-from hangul.dataset_creation import txt2png
+from hfd.dataset_creation import txt2png
 
 
 if __name__ == '__main__':

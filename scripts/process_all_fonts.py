@@ -1,9 +1,9 @@
 import argparse, os
 from multiprocessing import Pool
 
-from hangul.dataset_creation import _txt2png, _png2h5
+from hfd.dataset_creation import _txt2png, _png2h5
 
-from hangul.plotting import _plot_single_font
+from hfd.plotting import _plot_single_font
 
 
 parser = argparse.ArgumentParser(description='Preprocess all fonts.')

@@ -2,7 +2,7 @@
 
 import argparse
 
-from hangul.dataset_creation import png2h5
+from hfd.dataset_creation import png2h5
 
 
 if __name__ == '__main__':
