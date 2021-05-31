@@ -5,8 +5,6 @@ from matplotlib.pyplot import imread
 
 from .utils import resize
 from .label_mapping import int2imf
-from .fontslist import fonts_with_imf
-from .cropping import load_crops500
 
 
 def txt2png(base_path, font_file, fontsize):
@@ -105,17 +103,11 @@ def png2h5(base_folder, font_name, fontsize):
     images = stack_same_size(images, max_h, max_w)
     labels = np.stack(labels)
 
-    if font_name in fonts_with_imf:
-        for start, end, im_list in zip(starts[1:], ends[1:],
-                                       [initial, medial, final]):
-            for num in range(start, end):
-                read_im(num, image_folder, fontsize, size_array, im_list)
-    else:
-        if fontsize == 500:
-            shape500 = images.shape[1:]
-        else:
-            shape500 = None
-        initial, medial, final = load_crops500(font_name, shape500=shape500)
+
+    for start, end, im_list in zip(starts[1:], ends[1:],
+                                   [initial, medial, final]):
+        for num in range(start, end):
+            read_im(num, image_folder, fontsize, size_array, im_list)
 
     initial = stack_same_size(initial, max_h, max_w)
     medial = stack_same_size(medial, max_h, max_w)
