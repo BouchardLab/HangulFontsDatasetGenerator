@@ -11,7 +11,7 @@ parser.add_argument('hangul_folder', type=str,
                     help='path to base')
 parser.add_argument('fontsize', type=int, default=None,
                     help='single fontsize')
-parser.add_argument('fontname', type=str, default=None,
+parser.add_argument('--fontname', type=str, default=None,
                     help='single fontname')
 args = parser.parse_args()
 

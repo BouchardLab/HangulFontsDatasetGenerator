@@ -35,5 +35,6 @@ RUN chmod +x /usr/bin/tini
 ENTRYPOINT [ "/usr/bin/tini", "--", "/home/entrypoint.sh" ]
 CMD [ "/bin/bash" ]
 
+RUN ls
 ADD HangulFontsDatasetGenerator /home/HanGulFontsDatasetGenerator
 RUN pip install -e /home/HanGulFontsDatasetGenerator
