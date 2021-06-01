@@ -4,11 +4,13 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 ENV PATH /home/conda/bin:$PATH
 
 RUN apt-get update --fix-missing && \
-    apt-get install -y build-essential gfortran wget bzip2 ca-certificates curl git && \
+    apt-get install -y build-essential gfortran wget bzip2 ca-certificates curl git imagemagick && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 SHELL [ "/bin/bash", "--login", "-c" ]
+ADD policy.xml /etc/ImageMagick-6/policy.xml
+
 
 RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-4.5.11-Linux-x86_64.sh -O ~/miniconda.sh && \
     /bin/bash ~/miniconda.sh -b -p /home/conda && \

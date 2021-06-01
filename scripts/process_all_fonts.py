@@ -23,14 +23,14 @@ if args.fontsize is None:
 else:
     fontsizes = [int(args.fontsize)]
 
-if args.fontsize is None:
+if args.fontname is None:
     font_files = next(os.walk(os.path.join(base_folder, 'all_fonts')))[-1]
 else:
     font_files = [args.fontname]
 
+print(os.path.splitext(font_files[0])[-1].lower())
 font_files = [f for f in font_files if
-              (os.path.splitext(f).lower() == 'ttf') or
-              (os.path.splitext(f).lower() == 'otf')]
+              (os.path.splitext(f)[-1].lower() in ['.ttf', '.otf'])]
 font_names = [os.path.splitext(f)[0] for f in font_files]
 texts_path = os.path.join(base_folder, 'texts')
 print(base_folder)

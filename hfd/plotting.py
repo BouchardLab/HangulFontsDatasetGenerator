@@ -45,10 +45,10 @@ def plot_single_font(base_folder, font_folder, fontsize):
     save_path = os.path.join(base_folder, 'pdfs', font_folder,
                              '{}_{}.pdf'.format(font_folder, fontsize))
     with h5py.File(h5_path)as f:
-        images = f['images'].value.astype('float')
-        initial = f['initial'].value.astype('float')
-        medial = f['medial'].value.astype('float')
-        final = f['final'].value.astype('float')
+        images = f['images'][:].astype('float')
+        initial = f['initial'][:].astype('float')
+        medial = f['medial'][:].astype('float')
+        final = f['final'][:].astype('float')
     with PdfPages(save_path) as pdf:
         # initial
         std = np.std(images, axis=0)
