@@ -31,7 +31,7 @@ For your conveinience we have curated the font files used here along with links 
 - Stylish-Regular
 - GamjaFlower-Regular
 - SeoulHangangB
-- JoseonIlboMyeongjo
+- ChosunIlboMyeongjo
 - PoorStory-Regular
 - BlackAndWhitePicture-Regular
 - HiMelody-Regular
