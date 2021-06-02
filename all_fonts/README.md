@@ -1,5 +1,4 @@
-For your conveinience we have curated the font files used here along with links to their sources. There are a few other font files that either are too
-similar to the included fonts (SemiBold versus Bold).
+For your conveinience we have curated the font files used here along with links to their sources. We excluded a number of potential fonts because they either did not include all blocks or they were nearly identical to a similarly named font.
 
 - NanumMyeongjo
 - NanumMyeongjoEB
