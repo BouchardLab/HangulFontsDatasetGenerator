@@ -1,5 +1,14 @@
 For your conveinience we have curated the font files used here along with links to their sources. We excluded a number of potential fonts because they either did not include all blocks or they were nearly identical to a similarly named font.
 
+- GothicA1-ExtraLight
+- GothicA1-Light
+- GothicA1-Thin
+- GothicA1-Regular
+- GothicA1-Medium
+- GothicA1-Bold
+- GothicA1-SemiBold
+- GothicA1-ExtraBold
+- GothicA1-Black
 - NanumMyeongjo
 - NanumMyeongjoEB
 - NanumBarunGothicUltraLight
@@ -13,24 +22,15 @@ For your conveinience we have curated the font files used here along with links 
 - NanumBarunpenRegular
 - NanumPenScript-Regular
 - NanumBrush
-- GothicA1-ExtraLight
-- GothicA1-Light
-- GothicA1-Thin
-- GothicA1-Regular
-- GothicA1-Medium
-- GothicA1-Bold
-- GothicA1-SemiBold
-- GothicA1-ExtraBold
-- GothicA1-Black
 - SeoulHangangL
 - SeoulHangangM
 - SeoulHangangBL
+- SeoulHangangB
 - SeoulHangangEB
 - SourceHanSerifK-Regular
 - IropkeBatangM
 - Stylish-Regular
 - GamjaFlower-Regular
-- SeoulHangangB
 - ChosunIlboMyeongjo
 - PoorStory-Regular
 - BlackAndWhitePicture-Regular
