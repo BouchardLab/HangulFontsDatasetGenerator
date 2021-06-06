@@ -10,12 +10,12 @@ This folder contains scripts for building a Docker image which can generate the 
 docker build -t "hfd" . 
 ```
 
-2. To download the premade image run
+2. To download the premade image from [dockerhub](https://hub.docker.com/r/jesselivezey/hfd)
 ```bash
-docker
+docker pull jesselivezey/hfd
 ```
 
 To generate the HangulFontsDataset after running 1 or 2, from the `scripts` folder run
 ```bash
-docker run
+bash generate_hfd.sh
 ```
