@@ -28,7 +28,6 @@ if args.fontname is None:
 else:
     font_files = [args.fontname]
 
-print(os.path.splitext(font_files[0])[-1].lower())
 font_files = [f for f in font_files if
               (os.path.splitext(f)[-1].lower() in ['.ttf', '.otf'])]
 font_names = [os.path.splitext(f)[0] for f in font_files]

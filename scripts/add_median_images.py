@@ -27,10 +27,10 @@ for dim in shapes:
     shape.append(sh[counts.argmax()])
 
 for fname in files_for_median:
-    with h5py.File(fname) as f:
+    with h5py.File(fname, 'a') as f:
         try:
             del f['images_median_shape']
         except KeyError:
             pass
-        median_images = resize(f['images'].value, shape)
+        median_images = resize(f['images'][:], shape)
         f.create_dataset('images_median_shape', data=median_images)

@@ -11,15 +11,23 @@ args = parser.parse_args()
 folder = args.folder
 fontsize =args.fontsize
 
-labels = ['initial', 'medial', 'final'
+labels = ['initial', 'medial', 'final',
           'initial_geometry', 'medial_geometry', 'final_geometry', 'all_geometry']
 bof = ['atom_bof', 'atom_mod_rotations_bof']
 files = []
 for d, _, files in os.walk(folder):
     for fname in files:
         if '{}.h5'.format(fontsize) in fname:
-            with h5py.File(os.path.join(d, fname)) as f:
+            with h5py.File(os.path.join(d, fname), 'a') as f:
                 for l in labels:
+                    try:
+                        del f[l]
+                    except KeyError:
+                        pass
                     f.create_dataset(l, data=label_df[l].values)
                 for l in bof:
+                    try:
+                        del f[l]
+                    except KeyError:
+                        pass
                     f.create_dataset(l, data=np.stack([*label_df[l].values]))
