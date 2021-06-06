@@ -1,7 +1,7 @@
 import glob, h5py, os, subprocess
 
 import numpy as np
-from matplotlib.pyplot import imread
+from PIL import Image
 
 from .utils import resize
 from .label_mapping import int2imf
@@ -88,9 +88,9 @@ def png2h5(base_folder, font_name, fontsize):
         name = h[2:].upper()
         filename = os.path.join(image_folder,
                                 '{}_{}.png'.format(name, fontsize))
-        im = imread(filename)
+        im = np.asarray(Image.open(filename).convert('LA'))[..., 1]
         size_array.append(im.shape)
-        images.append(im[..., 1])
+        images.append(im)
 
     for num in range(starts[0], ends[0]):
         read_im(num, image_folder, fontsize, size_array, images)
@@ -98,7 +98,7 @@ def png2h5(base_folder, font_name, fontsize):
         labels.append(mapping_numbers)
 
     sizeSet = set(size_array)
-    max_h, max_w, _ = max(sizeSet)
+    max_h, max_w = max(sizeSet)
 
     images = stack_same_size(images, max_h, max_w)
     labels = np.stack(labels)
