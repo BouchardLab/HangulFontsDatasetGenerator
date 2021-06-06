@@ -17,7 +17,7 @@ def plot_font(h5_path):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Plot all jamo in an h5 file.')
+    parser = argparse.ArgumentParser(description='Plot all blocks in an pdf file.')
     parser.add_argument('h5_path', type=str,
                         help='path to png folder')
 

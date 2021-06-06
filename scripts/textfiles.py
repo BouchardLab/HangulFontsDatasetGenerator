@@ -1,12 +1,15 @@
-# Write all hangul characters to text files
+"""Write all hangul characters to text files
+Text files are already provided in the github repo, but if you want to
+regenerate them, this will do it.
+"""
 import sys, os
 from builtins import chr
 
+parser = argparse.ArgumentParser(description='Generate hangul text files.')
+parser.add_argument('folder', type=str, help='Folder to save the folder files inside.')
 
-try:
-    folder = sys.argv[1]
-except IndexError:
-    folder = '..'
+parser.parse_args()
+folder = args.folder
 folder = os.path.join(folder, 'texts')
 
 starts = [44032, 4352, 4449, 4520]
