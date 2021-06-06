@@ -1,4 +1,4 @@
-For your conveinience we have curated the font files used here along with links to their sources. We excluded a number of potential fonts because they either did not include all blocks or they were nearly identical to a similarly named font.
+  For your conveinience we have curated the [font files and licenses](https://drive.google.com/file/d/1AgabLzjGX_tDrA0mKvYhJGuGmWYWD8RW/view?usp=sharing) used here. We excluded a number of potential fonts because they either did not include all blocks or they were nearly identical to a similarly named font.
 
 - BlackAndWhitePicture-Regular
 - ChosunIlboMyeongjo
