@@ -1,4 +1,4 @@
-  For your conveinience we have curated the [font files and licenses](https://drive.google.com/file/d/1AgabLzjGX_tDrA0mKvYhJGuGmWYWD8RW/view?usp=sharing) used here. We excluded a number of potential fonts because they either did not include all blocks or they were nearly identical to a similarly named font.
+  For your conveinience we have curated the [font files and licenses](https://drive.google.com/file/d/1AgabLzjGX_tDrA0mKvYhJGuGmWYWD8RW/view?usp=sharing) used here. We excluded a number of potential fonts because they either did not include all blocks or they were nearly identical to a similarly named font. If using the provided docker image and scripts, the font files (.ttf and .otf) should be unzipped and placed in this directory.
 
 - BlackAndWhitePicture-Regular
 - ChosunIlboMyeongjo
