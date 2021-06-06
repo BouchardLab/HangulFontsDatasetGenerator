@@ -11,8 +11,7 @@ args = parser.parse_args()
 folder = args.folder
 fontsize =args.fontsize
 
-labels = ['initial', 'medial', 'final',
-          'initial_geometry', 'medial_geometry', 'final_geometry', 'all_geometry']
+labels = ['initial_geometry', 'medial_geometry', 'final_geometry', 'all_geometry']
 bof = ['atom_bof', 'atom_mod_rotations_bof']
 files = []
 for d, _, files in os.walk(folder):
