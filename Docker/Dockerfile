@@ -25,7 +25,7 @@ ENV PATH=/home/conda/bin:$PATH
 # Install
 RUN conda update -n base -c defaults conda
 RUN conda install python=3.7
-RUN conda install numpy scipy pandas scikit-image h5py
+RUN conda install numpy scipy pandas scikit-image h5py pillow
 
 
 # Setup entrypoint
@@ -37,5 +37,5 @@ RUN chmod +x /usr/bin/tini
 ENTRYPOINT [ "/usr/bin/tini", "--", "/home/entrypoint.sh" ]
 CMD [ "/bin/bash" ]
 
-ADD HangulFontsDatasetGenerator /home/HanGulFontsDatasetGenerator
+RUN git clone https://github.com/BouchardLab/HangulFontsDatasetGenerator.git /home/HanGulFontsDatasetGenerator
 RUN pip install -e /home/HanGulFontsDatasetGenerator

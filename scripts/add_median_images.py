@@ -3,7 +3,7 @@ import argparse, h5py, os, sys
 
 from hfd.read_data import load_image_shape
 from hfd.utils import resize
-from hfd.fontlist import n_blocks
+from hfd.variables import n_blocks
 
 
 parser = argparse.ArgumentParser(description='Compute median image shape and add median images to h5.')
