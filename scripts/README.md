@@ -7,4 +7,4 @@ bash generate_hfd.sh
 
 ```
 
-You should also be able to create an anaconda environment based on environment.yml and run these scripts directly.
+You should also be able to create a conda environment based on `environment.yml` and run the scripts directly.
