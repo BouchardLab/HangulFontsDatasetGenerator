@@ -5,9 +5,9 @@ This folder contains scripts for building a Docker image which can generate the 
 
 ```
 
-1. To generate the Docker image locally run
+1. To generate the Docker image locally run the follow from this folder
 ```bash
-bash gen_docker.sh
+docker build -t "hfd" . 
 ```
 
 2. To download the premade image run
@@ -15,7 +15,7 @@ bash gen_docker.sh
 docker
 ```
 
-To generate the HangulFontsDataset after running 1. or 2. run
+To generate the HangulFontsDataset after running 1 or 2, from the `scripts` folder run
 ```bash
 docker run
 ```
