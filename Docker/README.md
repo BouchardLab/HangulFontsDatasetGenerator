@@ -1,9 +1,6 @@
 # Dockerfile for generating the HangulFontsDataset
 
-This folder contains scripts for building a Docker image which can generate the HangulFontsDataset locally. Alternatively, you can download a premade image using
-```bash
-
-```
+This folder contains scripts for building a Docker image which can generate the HangulFontsDataset locally. Alternatively, you can download a premade image from dockerhub.
 
 1. To generate the Docker image locally run the follow from this folder
 ```bash
