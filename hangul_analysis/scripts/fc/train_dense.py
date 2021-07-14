@@ -8,11 +8,10 @@ import torch.nn.functional as F
 
 from ignite.metrics import Accuracy, Loss
 
-from science_nets.model_creator import train_loop
-from science_nets.hp_space import DenseHyperparameterSpace
-
-from hangul.ml import LeaveOneFontOutCV
-from hangul.variables import n_initial, n_medial, n_final
+from hangul_analysis.nets.model_creator import train_loop
+from hangul_analysis.nets.hp_space import DenseHyperparameterSpace
+from hangul_analysis.ml import LeaveOneFontOutCV
+from hangul_analysis.variables import n_initial, n_medial, n_final
 
 
 def main(h5_folder, save_folder, exp_name, fold, fontsize, imf, device, info=False,

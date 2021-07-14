@@ -19,3 +19,4 @@ dependencies:
     - tqdm
     - tensorboardx==1.6
     - pytorch-ignite==0.2.0
+    - mpi4py

@@ -1,17 +1,10 @@
 import argparse, os, time, pickle, h5py
 
-import numpy as np
-
 import torch
 from torch.utils.data import DataLoader, TensorDataset
-import torch.nn.functional as F
-
-from ignite.metrics import Accuracy, Loss
 
 from hangul_analysis.nets.model_creator import make_dense_model
-from hangul_analysis.nets.hp_space import DenseHyperparameterSpace
 from hangul_analysis.ml import LeaveOneFontOutCV, best_imf_networks
-from hangul_analysis.variables import n_initial, n_medial, n_final
 
 
 def main(h5_folder, save_folder, exp_name, fontsize, device, n_models):
