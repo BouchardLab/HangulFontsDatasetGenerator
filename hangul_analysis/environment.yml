@@ -1,0 +1,21 @@
+name: hangul_analysis
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.6
+  - pip
+  - pandas
+  - h5py
+  - scipy
+  - scikit-image
+  - numpy
+  - scipy
+  - pillow
+  - matplotlib
+  - pytorch=1.0.1
+  - pyuoi
+  - pip:
+    - tqdm
+    - tensorboardx==1.6
+    - pytorch-ignite==0.2.0
